@@ -1,0 +1,497 @@
+$DarkMagenta : hsl(300, 43%, 22%);
+$SoftPink : hsl(333, 80%, 67%);
+$GrayishMagenta : hsl(303, 10%, 53%);
+$LightGrayishMagenta : hsl(300, 24%, 96%);
+$AbsoluteWhite : hsl(0, 0%, 100%);
+
+/* FONTS */
+$LSpartan : "League Spartan", sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image:url(./Imgs/bg-pattern-top-desktop.svg), url(./Imgs/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat:no-repeat, no-repeat;
+    background-size:auto, auto;
+}
+
+#MainFrame{
+    position:absolute;
+    width:90%;
+    height:80%;
+    /*background-color:$AbsoluteWhite;*/
+    /*background-color:$AbsoluteWhite;*/
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+#TitleFrame{
+
+    width:30%;
+    height:40%;
+    position:absolute;
+    left:2.5%;
+    top:10%;
+    order:1;
+
+    & h5{
+        color:$DarkMagenta;
+        font-family:$LSpartan;
+        font-size:5vh;
+        font-weight:700;
+        width:100%;
+        height:50%;
+        text-align:left;
+    }
+
+    & p{
+        color:$GrayishMagenta;
+        font-family:$LSpartan;
+        font-size:3vh;
+        font-weight:500;
+        width:100%;
+        height:50%;
+        text-align:left;
+    }
+
+
+}
+
+/* RATINGS */
+
+$RatingWidth:60%;
+$RatingHeight:50px;
+$RatingBorder:8px;
+$RatingFontSize:1.2vw;
+$StarsGap:6px;
+
+#RatingsFrame{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    order:2;
+    width:50%;
+    height:40%;
+    left:60%;
+    top:10%;
+}
+
+#Rating1{
+
+    display:flex;
+    position:relative;
+    justify-content:space-around;
+    align-items:center;
+    background-color:$LightGrayishMagenta;
+    width:$RatingWidth;
+    height:$RatingHeight;
+    border-radius:$RatingBorder;
+    left:-10%;
+
+    & p{
+        color:$DarkMagenta;
+        font-family:$LSpartan;
+        font-weight:700;
+        font-size:$RatingFontSize;
+    }
+
+    & #Stars{
+        display:flex;
+        justify-content:center;
+        gap:$StarsGap;
+    }
+}
+
+#Rating2{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:$LightGrayishMagenta;
+    width:$RatingWidth;
+    height:$RatingHeight;
+    border-radius:$RatingBorder;
+
+    & p{
+        color:$DarkMagenta;
+        font-family:$LSpartan;
+        font-weight:700;
+        font-size:$RatingFontSize;
+    }
+
+    & #Stars{
+        display:flex;
+        justify-content:center;
+        gap:$StarsGap;
+    }
+}
+
+#Rating3{
+
+    display:flex;
+    position:relative;
+    justify-content:space-around;
+    align-items:center;
+    background-color:$LightGrayishMagenta;
+    width:$RatingWidth;
+    height:$RatingHeight;
+    border-radius:$RatingBorder;
+    left:10%;
+
+    & p{
+        color:$DarkMagenta;
+        font-family:$LSpartan;
+        font-weight:700;
+        font-size:$RatingFontSize;
+    }
+
+    & #Stars{
+        display:flex;
+        justify-content:center;
+        gap:$StarsGap;
+    }
+}
+
+/* COMMENTS */
+
+$PfpRadius:100%;
+$CommRad:10px;
+$CommHeight:70%;
+$CommWidth:30%;
+$TFS:1.2vw;
+$CommentFontSize:2.5vh;
+
+#CommentsFrame{
+    position:absolute;
+    display:flex;
+    justify-content:space-evenly;
+
+    order:3;
+    width:100%;
+    height:50%;
+    top:50%;
+}
+
+#Comment1{
+
+    display:flex;
+    flex-direction:column;
+    background-color:$DarkMagenta;
+    height:$CommHeight;
+    width:$CommWidth;
+    border-radius:$CommRad;
+
+    & p{
+        position:relative;
+        color:$AbsoluteWhite;
+        font-size:$CommentFontSize;
+        font-family:$LSpartan;
+        height:60%;
+        width:90%;
+        left:5%;
+        top:15%;
+        text-align:left;
+        text-shadow: 2px 2px 8px #222222;
+        line-height:110%;
+        word-spacing:4px;
+    }
+
+    & #CommentInfo{
+        display:flex;
+        justify-content:left;
+        align-items:center;
+        position:relative;
+        gap:5%;
+        width:80%;
+        height:30%;
+        left:5%;
+        top:5%;
+
+        & #pfp{
+            width:auto;
+            height:100%;
+            max-width:80px;
+            max-height:80px;
+            & img{
+                border-radius:$PfpRadius;
+                width:auto;
+                height:100%;
+            }
+        }
+
+        & #Titles{
+            
+            & h1{
+                font-family:$LSpartan;
+                font-size:$TFS;
+                color:$AbsoluteWhite;
+                text-align:center;
+            }
+
+            & p{
+                font-family:$LSpartan;
+                font-size:1vw;
+                color:$SoftPink;
+                text-align:center;
+            }
+        }
+
+    }
+}
+
+#Comment2{
+
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    background-color:$DarkMagenta;
+    height:$CommHeight;
+    width:$CommWidth;
+    border-radius:$CommRad;
+    top:10%;
+
+    & p{
+        position:relative;
+        color:$AbsoluteWhite;
+        font-size:$CommentFontSize;
+        font-family:$LSpartan;
+        height:60%;
+        width:90%;
+        left:5%;
+        top:15%;
+        text-align:left;
+        text-shadow: 2px 2px 8px #222222;
+        line-height:110%;
+        word-spacing:4px;
+    }
+
+    & #CommentInfo{
+        display:flex;
+        justify-content:left;
+        align-items:center;
+        position:relative;
+        gap:5%;
+        width:80%;
+        height:30%;
+        left:5%;
+        top:5%;
+
+        & #pfp{
+            width:auto;
+            height:100%;
+            max-width:80px;
+            max-height:80px;
+            & img{
+                border-radius:$PfpRadius;
+                width:auto;
+                height:100%;
+            }
+        }
+
+        & #Titles{
+            
+            & h1{
+                font-family:$LSpartan;
+                font-size:$TFS;
+                color:$AbsoluteWhite;
+                text-align:center;
+            }
+
+            & p{
+                font-family:$LSpartan;
+                font-size:1vw;
+                color:$SoftPink;
+                text-align:center;
+            }
+        }
+
+    }
+}
+
+#Comment3{
+    
+    position:relative;
+    top:20%;
+    display:flex;
+    flex-direction:column;
+    background-color:$DarkMagenta;
+    height:$CommHeight;
+    width:$CommWidth;
+    border-radius:$CommRad;
+
+    & p{
+        position:relative;
+        color:$AbsoluteWhite;
+        font-size:$CommentFontSize;
+        font-family:$LSpartan;
+        height:60%;
+        width:90%;
+        left:5%;
+        top:15%;
+        text-align:left;
+        text-shadow: 2px 2px 8px #222222;
+        line-height:110%;
+        word-spacing:4px;
+    }
+
+    & #CommentInfo{
+        display:flex;
+        justify-content:left;
+        align-items:center;
+        position:relative;
+        gap:5%;
+        width:80%;
+        height:30%;
+        left:5%;
+        top:5%;
+
+        & #pfp{
+            width:auto;
+            height:100%;
+            max-width:80px;
+            max-height:80px;
+            & img{
+                border-radius:$PfpRadius;
+                width:auto;
+                height:100%;
+            }
+        }
+
+        & #Titles{
+            
+            & h1{
+                font-family:$LSpartan;
+                font-size:$TFS;
+                color:$AbsoluteWhite;
+                text-align:center;
+            }
+
+            & p{
+                font-family:$LSpartan;
+                font-size:1vw;
+                color:$SoftPink;
+                text-align:center;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    body{
+        background-image:url(./Imgs/bg-pattern-top-mobile.svg), url(./Imgs/bg-pattern-bottom-mobile.svg);
+    }
+
+    #MainFrame{
+        padding:0;
+        margin:0;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+
+    #TitleFrame{
+        left:-2%;
+        top:5%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        width:100%;
+        height:25%;
+        order:1;
+        
+        & h5{
+            /*position:relative;*/
+            width:70%;
+            height:50%;
+            text-align:center;
+            font-size:4vh;
+        }
+
+        & p{
+            text-align:center;
+            font-size:2vh;
+            height:50%;
+            width:80%;
+        }
+    }
+
+    #RatingsFrame{
+        /*position:relative;*/
+        order:2;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:25%;
+        left:-2%;
+        top:25%;
+
+        & #Rating1, #Rating2, #Rating3{
+            left:0;
+            justify-content:center;
+            flex-direction:column;
+            gap:10px;
+            width:90%;
+
+            & #Stars{
+                height:50%;
+                width:100%;
+            }
+
+            & p{
+                height:50%;
+                width:100%;
+                text-align:center;
+                font-size:2vh;
+            }
+        }
+
+    }
+
+    #CommentsFrame{
+        width:90%;
+        height:50%;
+        left:3%;
+        order:3;
+        display:flex;
+        flex-direction:column;
+
+        & #Comment1, #Comment2, #Comment3{
+            position:relative;
+            width:95%;
+            height:30%;
+            left:2.5%;
+            top:0;
+            
+            & #CommentInfo{
+                
+                & #Titles{
+                    h1{
+                        font-size:2.5vh;
+                    }
+                    p{
+                        font-size:2vh;
+                    }
+                }
+            }
+
+            & p{ /*COMMENT ITSELF*/
+                font-size:1.5vh;
+                height:50%;
+            }
+        }
+    }
+}

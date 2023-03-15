@@ -1,0 +1,364 @@
+/* FONTS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(./Imgs/bg-pattern-top-desktop.svg), url(./Imgs/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto; }
+
+#MainFrame {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  /*background-color:$AbsoluteWhite;*/
+  /*background-color:$AbsoluteWhite;*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+#TitleFrame {
+  width: 30%;
+  height: 40%;
+  position: absolute;
+  left: 2.5%;
+  top: 10%;
+  order: 1; }
+  #TitleFrame h5 {
+    color: #502050;
+    font-family: "League Spartan", sans-serif;
+    font-size: 5vh;
+    font-weight: 700;
+    width: 100%;
+    height: 50%;
+    text-align: left; }
+  #TitleFrame p {
+    color: #937b92;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    width: 100%;
+    height: 50%;
+    text-align: left; }
+
+/* RATINGS */
+#RatingsFrame {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  order: 2;
+  width: 50%;
+  height: 40%;
+  left: 60%;
+  top: 10%; }
+
+#Rating1 {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f2f7;
+  width: 60%;
+  height: 50px;
+  border-radius: 8px;
+  left: -10%; }
+  #Rating1 p {
+    color: #502050;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw; }
+  #Rating1 #Stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px; }
+
+#Rating2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f2f7;
+  width: 60%;
+  height: 50px;
+  border-radius: 8px; }
+  #Rating2 p {
+    color: #502050;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw; }
+  #Rating2 #Stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px; }
+
+#Rating3 {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f2f7;
+  width: 60%;
+  height: 50px;
+  border-radius: 8px;
+  left: 10%; }
+  #Rating3 p {
+    color: #502050;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw; }
+  #Rating3 #Stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px; }
+
+/* COMMENTS */
+#CommentsFrame {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  order: 3;
+  width: 100%;
+  height: 50%;
+  top: 50%; }
+
+#Comment1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #502050;
+  height: 70%;
+  width: 30%;
+  border-radius: 10px; }
+  #Comment1 p {
+    position: relative;
+    color: white;
+    font-size: 2.5vh;
+    font-family: "League Spartan", sans-serif;
+    height: 60%;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    text-align: left;
+    text-shadow: 2px 2px 8px #222222;
+    line-height: 110%;
+    word-spacing: 4px; }
+  #Comment1 #CommentInfo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    gap: 5%;
+    width: 80%;
+    height: 30%;
+    left: 5%;
+    top: 5%; }
+    #Comment1 #CommentInfo #pfp {
+      width: auto;
+      height: 100%;
+      max-width: 80px;
+      max-height: 80px; }
+      #Comment1 #CommentInfo #pfp img {
+        border-radius: 100%;
+        width: auto;
+        height: 100%; }
+    #Comment1 #CommentInfo #Titles h1 {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1.2vw;
+      color: white;
+      text-align: center; }
+    #Comment1 #CommentInfo #Titles p {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1vw;
+      color: #ee68a4;
+      text-align: center; }
+
+#Comment2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #502050;
+  height: 70%;
+  width: 30%;
+  border-radius: 10px;
+  top: 10%; }
+  #Comment2 p {
+    position: relative;
+    color: white;
+    font-size: 2.5vh;
+    font-family: "League Spartan", sans-serif;
+    height: 60%;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    text-align: left;
+    text-shadow: 2px 2px 8px #222222;
+    line-height: 110%;
+    word-spacing: 4px; }
+  #Comment2 #CommentInfo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    gap: 5%;
+    width: 80%;
+    height: 30%;
+    left: 5%;
+    top: 5%; }
+    #Comment2 #CommentInfo #pfp {
+      width: auto;
+      height: 100%;
+      max-width: 80px;
+      max-height: 80px; }
+      #Comment2 #CommentInfo #pfp img {
+        border-radius: 100%;
+        width: auto;
+        height: 100%; }
+    #Comment2 #CommentInfo #Titles h1 {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1.2vw;
+      color: white;
+      text-align: center; }
+    #Comment2 #CommentInfo #Titles p {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1vw;
+      color: #ee68a4;
+      text-align: center; }
+
+#Comment3 {
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #502050;
+  height: 70%;
+  width: 30%;
+  border-radius: 10px; }
+  #Comment3 p {
+    position: relative;
+    color: white;
+    font-size: 2.5vh;
+    font-family: "League Spartan", sans-serif;
+    height: 60%;
+    width: 90%;
+    left: 5%;
+    top: 15%;
+    text-align: left;
+    text-shadow: 2px 2px 8px #222222;
+    line-height: 110%;
+    word-spacing: 4px; }
+  #Comment3 #CommentInfo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    gap: 5%;
+    width: 80%;
+    height: 30%;
+    left: 5%;
+    top: 5%; }
+    #Comment3 #CommentInfo #pfp {
+      width: auto;
+      height: 100%;
+      max-width: 80px;
+      max-height: 80px; }
+      #Comment3 #CommentInfo #pfp img {
+        border-radius: 100%;
+        width: auto;
+        height: 100%; }
+    #Comment3 #CommentInfo #Titles h1 {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1.2vw;
+      color: white;
+      text-align: center; }
+    #Comment3 #CommentInfo #Titles p {
+      font-family: "League Spartan", sans-serif;
+      font-size: 1vw;
+      color: #ee68a4;
+      text-align: center; }
+
+@media screen and (max-width: 912px) {
+  body {
+    background-image: url(./Imgs/bg-pattern-top-mobile.svg), url(./Imgs/bg-pattern-bottom-mobile.svg); }
+
+  #MainFrame {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+
+  #TitleFrame {
+    left: -2%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    order: 1; }
+    #TitleFrame h5 {
+      /*position:relative;*/
+      width: 70%;
+      height: 50%;
+      text-align: center;
+      font-size: 4vh; }
+    #TitleFrame p {
+      text-align: center;
+      font-size: 2vh;
+      height: 50%;
+      width: 80%; }
+
+  #RatingsFrame {
+    /*position:relative;*/
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    left: -2%;
+    top: 25%; }
+    #RatingsFrame #Rating1, #RatingsFrame #Rating2, #RatingsFrame #Rating3 {
+      left: 0;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      width: 90%; }
+      #RatingsFrame #Rating1 #Stars, #RatingsFrame #Rating2 #Stars, #RatingsFrame #Rating3 #Stars {
+        height: 50%;
+        width: 100%; }
+      #RatingsFrame #Rating1 p, #RatingsFrame #Rating2 p, #RatingsFrame #Rating3 p {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 2vh; }
+
+  #CommentsFrame {
+    width: 90%;
+    height: 50%;
+    left: 3%;
+    order: 3;
+    display: flex;
+    flex-direction: column; }
+    #CommentsFrame #Comment1, #CommentsFrame #Comment2, #CommentsFrame #Comment3 {
+      position: relative;
+      width: 95%;
+      height: 30%;
+      left: 2.5%;
+      top: 0; }
+      #CommentsFrame #Comment1 #CommentInfo #Titles h1, #CommentsFrame #Comment2 #CommentInfo #Titles h1, #CommentsFrame #Comment3 #CommentInfo #Titles h1 {
+        font-size: 2.5vh; }
+      #CommentsFrame #Comment1 #CommentInfo #Titles p, #CommentsFrame #Comment2 #CommentInfo #Titles p, #CommentsFrame #Comment3 #CommentInfo #Titles p {
+        font-size: 2vh; }
+      #CommentsFrame #Comment1 p, #CommentsFrame #Comment2 p, #CommentsFrame #Comment3 p {
+        /*COMMENT ITSELF*/
+        font-size: 1.5vh;
+        height: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
